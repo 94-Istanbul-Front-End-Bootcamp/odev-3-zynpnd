@@ -10,26 +10,30 @@
 </head>
 
 <body>
-    <form action="POST" id="form1" novalidate>
+    <form action = " "  id="form" name ="form1" novalidate  > 
         <h1>FORM VALIDATION ODEVI</h1>
         <div class="form-body">
             <div>
                 <label for="userName">Kullanıcı Adı :</label>
-                <input type="text" placeholder="Kullanıcı Adı" required>
+                <input id="username" type="text" placeholder="Kullanıcı Adı" required>
+                <p id="name"></p>
             </div>
             <div>
                 <label for="password">Parola :</label>
-                <input type="password" placeholder="Şifre" required>
+                <input id="password" type="password" placeholder="Şifre" required>
+                <p id="pass"></p>
             </div>
             <div>
                 <label for="eMail">E-Mail :</label>
-                <input type="email" placeholder="E-mail" required>
+                <input id="email" type="email" placeholder="E-mail" required>
+                <p id="mail"></p>
             </div>
             <div>
-                <input type="checkbox" required>
+                <input id="checkbox" type="checkbox" required>
+                <p id="check"></p>
             </div>
             <div>
-                <button>Gönder</button>
+                <button onclick="return validateForm()" action=" http://httpbin.org/post">Gönder</button>
             </div>
         </div>
     </form>
